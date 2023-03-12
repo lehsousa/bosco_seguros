@@ -494,7 +494,9 @@ nav.show div.icon-close {
 /* =============FOOTER============= */
 
 footer {
+    display:flex;
     background: var(--base-color);
+    justify-content:center;
 }
 
 footer.section {
@@ -526,6 +528,13 @@ footer .social a:hover {
     transform: translateY(-8px);
 }
 
+footer .social img{
+    display:flex;
+    align-items:center;
+    margin:auto;
+    width:50px;
+    height:auto;
+}
 
 /* =============BACK-TO-TOP============= */
 
@@ -644,17 +653,25 @@ footer .social a:hover {
 }
 
 
-/* LARGE DEVICES: 1023 > */
-
-
-/* LARGE DEVICES: 992 > */
-
 @media (min-width:992px) {
      :root {
         --title-font-size: 3rem;
         --subtitle-font-size: 1.125rem;
     }
 }
-
-
-/* MEDIUM DEVICES: 767 > */
+@media (min-width: 425px){
+    a.logo{
+     font-size:2rem;
+     }
+  }
+@media (min-width: 375px){
+    a.logo{
+     font-size:2rem;
+     }
+  }
+@media (min-width: 320px){
+    a.logo{
+     font-size:1.5rem;
+     }
+  }
+ 
